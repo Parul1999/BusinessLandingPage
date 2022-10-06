@@ -63,6 +63,7 @@ nav {
 .nav-hero {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav-hero-section {
@@ -209,3 +210,67 @@ footer {
 hr{
   margin-top: 2%;
 }
+
+@media only screen and (max-width: 865px) {
+.nav-items-list{
+  gap: 1rem;
+}
+.nav-hero-section{
+  width: 100%;
+}
+.nav-hero{
+  flex-flow: column;
+}
+.nav-description-section{
+  width: 100%;
+}
+}
+@media only screen and (max-width: 700px) {
+.footer-content{
+  flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+}
+@media only screen and (max-width: 650px) {
+  .navbar{
+    flex-flow: column;
+  }
+  .nav-items-list{
+    flex-wrap: wrap;
+  }
+  .nav-items-list::after{
+    content: '';
+    border: 1px solid #abb0b7;
+    margin:1rem 0 ;
+    width:100%
+  }
+  .team-desc{
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .team-desc>p{
+    width: 100%;
+  }
+  .team-creative-desc{
+    margin: 0 6rem;
+    flex-flow: column;
+    gap: 3rem;
+  }
+  .service-section:not(.reverse){
+    align-items: center;
+    flex-flow: column-reverse;
+  }
+  .services-description{
+    width: 100%;
+  }
+  .service-section.reverse{
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .section-img{
+    width: 45%;
+  }
+  }
